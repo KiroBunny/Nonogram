@@ -1,0 +1,21 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Number</th>
+            <th scope="col">Size</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let games of games">
+            <td> {{ games.id }}</td>
+            <td> {{ games.size }}</td>
+            <td><button id="btn" (click)="getGame(games.id)">Wybierz</button> </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>

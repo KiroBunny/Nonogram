@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
-import { GameComponent } from './game/game.component';
+import { GameListComponent } from './gameList/gameList.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,7 +24,7 @@ import { FormsModule }   from '@angular/forms';
   declarations: [
     AppComponent,
     HeaderComponent,
-    GameComponent,
+    GameListComponent,
     StatisticsComponent,
     MenuComponent,
     UserListComponent,
