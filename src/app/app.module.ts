@@ -12,7 +12,9 @@ import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTableModule } from '@angular/material/table'  
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import {AccordionModule} from 'primeng/accordion'; 
 import {MenuItem} from 'primeng/api';
 import { UserListComponent } from './user-list/user-list/user-list.component';
@@ -37,8 +39,10 @@ import { FormsModule }   from '@angular/forms';
     MatSliderModule,
     MatToolbarModule,
     MatIconModule,
+    MatButtonModule,
     AccordionModule,
     FormsModule,
+    MatTableModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

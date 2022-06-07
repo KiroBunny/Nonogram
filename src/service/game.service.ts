@@ -19,59 +19,18 @@ export class GameService {
   }
 
   public getMap(mapId: string){
-    console.log("jhdsfcbdxjhvxk;c");
     return this.http.get<Game>(this.gameUrl + "/" + mapId)
   }
 
-  public checkElement(mapId: string, row:number, col:number){
-    return this.http.post<Game[]>(this.gameUrl + "/"+mapId, {row, col});
-  }
+  // public getRowTabOfTrue(mapId: string){
+  //   return this.http.get<string[]>(this.gameUrl + "/" + mapId + "/row/")
+  // }
 
-  getColNumber(game: Game): String[][] {
-    let colNumber:String[][];
-    /* let n:string;
-    let i:number;
-    for(let row = 0; row < game.size; row++){
-      for(let col = 0; col < game.size; col++){
-        if(game.tab[row][col] == 1){ 
-          i++;
-        }
-        else if(game.tab[row][col] == 0){
-          if(i >0){
-            colNumber[row][col]+= "" + i;
-          }
+  // public getColTabOfTrue(mapId: string){
+  //   return this.http.get<string[]>(this.gameUrl + "/" + mapId + "/col/")
+  // }
 
-          i=0;
-        }
-      }
-      i=0;
-      n = "";
-    } */
-
-    return colNumber;
-  }
-
-  getRowNumber(game: Game): String[][] {
-    let rowNumber:String[][];
-    /* let n:string;
-    let i:number;
-    for(let col = 0; col < game.size; col++){
-      for(let row = 0; row < game.size; row++){ 
-        if(game.tab[row][col] == 1){ 
-          i++;
-        }
-        else if(game.tab[row][col] == 0){
-          if(i >0){
-            rowNumber[row][col]+= "" + i;
-          }
-
-          i=0;
-        }
-      }
-      i=0;
-      n = "";
-    } */
-
-    return rowNumber;
-  }
+  // public checkElement(mapId: string, row:number, col:number){
+  //   return this.http.post<Game[]>(this.gameUrl + "/"+mapId, {row, col});
+  // }
 }

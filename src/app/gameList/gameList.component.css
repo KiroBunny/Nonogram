@@ -1,5 +1,41 @@
-canvas { 
-    /* border-style: solid; */
-    margin-left: 10%;
+.body {
+  align-items: center;
+}
 
+.board {
+  border: 1px solid black;
+  display: grid;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+}
+
+.cols,
+.rows {
+  display: grid;
+  text-align: center;
+
+}
+
+.cols {
+  grid-template-columns: 70px 1fr 1fr 1fr 1fr 1fr;
+  border: 1px solid red;
+}
+
+.rows {
+  border: 1px solid green;
+  white-space: nowrap;
+  width: 70px;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.first-col {
+  width: 70px;
+}
+
+.innerWrapper {
+  display: flex;
 }
